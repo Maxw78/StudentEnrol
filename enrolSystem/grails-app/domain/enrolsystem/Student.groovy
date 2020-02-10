@@ -2,7 +2,7 @@ package enrolsystem
 
 class Student {
 
-String studentName
+	String studentName
 	String studentID
 	Date dob
 	Boolean isFundingAvailable
