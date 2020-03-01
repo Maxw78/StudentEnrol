@@ -9,7 +9,9 @@ class Student {
 	String studentEmail
 	String studentUsername
 	String studentPassword
-	String course
+	Course course
+	static hasMany=[modules: Module]
+	
 
     static constraints = {
 	studentID blank: false, nullable: false

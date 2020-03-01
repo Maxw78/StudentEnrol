@@ -5,8 +5,9 @@ class Module {
 	String module_code
 	int credits
 	String lecturer
-	String course
 	String description
+	static hasMany=[course:Course, modules:Module]
+	static belongsTo=[Course, Module]
 
     static constraints = {
 	module_title nullable: false, blank: false
